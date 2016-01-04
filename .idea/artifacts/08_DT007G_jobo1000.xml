@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="08_DT007G_jobo1000">
+    <output-path>$PROJECT_DIR$/out/artifacts/08_DT007G_jobo1000</output-path>
+    <root id="root">
+      <element id="archive" name="08_DT007G_jobo1000.jar">
+        <element id="module-output" name="08_DT007G_jobo1000" />
+      </element>
+    </root>
+  </artifact>
+</component>

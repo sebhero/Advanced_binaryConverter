@@ -1,0 +1,13 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#convertBtn
+{
+    margin-top:5px;
+    margin-bottom:5px;
+}

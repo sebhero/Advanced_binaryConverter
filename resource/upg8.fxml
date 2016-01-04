@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<!-- Viktigt att inte glömma att länka controller till denna viewn görs här av alla konstiga anledningar -->
+
+<VBox id="border" fx:id="borderPane" prefHeight="400.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.skola.controller.FXMLController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="true" text="_File">
+          <items>
+            <MenuItem mnemonicParsing="true" onAction="#clearFields" text="_New" />
+            <MenuItem mnemonicParsing="true" onAction="#convertToBinary" text="_Convert to Binary" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="true" onAction="#openFileDlg" text="_Open" />
+            <MenuItem mnemonicParsing="true" onAction="#saveFileDlg" text="_Save" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="true" onAction="#Quit" text="_Quit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TextArea fx:id="inputText" prefWidth="200.0" promptText="Enter text to be converted to Binary, here!" wrapText="true" />
+    <FlowPane alignment="CENTER" prefHeight="24.0" prefWidth="640.0" VBox.vgrow="NEVER">
+      <children>
+        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#convertToBinary" text="Convert to Binary" textAlignment="CENTER" />
+      </children>
+    </FlowPane>
+    <TextArea fx:id="outputBinary" editable="false" prefWidth="200.0" promptText="this is the output area" text="" wrapText="true" />
+  </children>
+</VBox>

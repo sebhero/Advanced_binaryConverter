@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uppgift 5">
+    <meta name="author" content="Sebastian Börebäck">
+    <!--Change to the selected choosen icon-->
+    <link rel="shortcut icon" href="assets/ico/binary16x16.png">
+
+    <title>String to Binary</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">{ String to Binary }</a>
+        </div>
+        <div id="nav-main" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!-- Viktigt när man gör hrefs för att de ska fungera får de inte vara ="" utan minst "#" -->
+            <li class="active"><a onclick="java.newClear()" href="#" accesskey="n">New</a></li>
+            <li><a href="#convert" onclick="java.convert()" accesskey="c">Convert to Binary</a></li>
+            <li> 
+                <!-- Button trigger help modal -->
+                <a data-toggle="modal" href="#helpModal" accesskey="H">Help</a>
+            </li>
+             <!-- Start -->
+             <li><a onclick="java.startFirebug()" href="#" >Start Firebug</a></li>
+             <!-- end -->
+             <li><a onclick="java.openFileDlg()" href="#" >Open</a></li>
+             <li role="presentation" class="divider"></li>
+             <li><a onclick="java.openFileDlg()" href="#" >Open</a></li>
+             <li><a onclick="java.saveFileDlg()" href="#" >Save</a></li>
+             <li role="presentation" class="divider"></li>
+            <li><a href="#" onclick="java.exit()" accesskey="e">Exit</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <div id="inputTextGroup" class="form-group">
+          <label class="control-label hide" for="inputText">Missing input text</label>
+          <textarea id="inputText" class="form-control" rows="3" placeholder="Write the text you want to convert to binary here."></textarea>
+        </div>
+        <div>
+          <button id="convertBtn" type="button" class="btn btn-primary" data-loading-text="Converting..." onclick="java.convert()"
+                  >Convert to Binary</button>
+        </div>
+        <div>
+            <blockquote>
+              <p id="outputBinary" ></p>
+            </blockquote>
+        </div>
+          
+          
+      </div>
+
+    </div><!-- /.container -->
+          
+    <!-- Help Modal -->
+  <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Help</h4>
+        </div>
+        <div class="modal-body">
+          What this app does is converting a text string to binarycode.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+      <!--Min JS code-->
+    <script src="main.js"></script>
+    <!-- for starting with firebug direktly-->
+<!--    <script type='text/javascript' src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>-->
+    <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+  </body>
+</html>
